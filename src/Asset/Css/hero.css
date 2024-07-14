@@ -1,0 +1,27 @@
+.consultbtn{
+    border-radius: var(--btn-radius);
+    padding: var(--btn-padding);
+    font-size: var(--regular-font-size);
+    background-color: var(--primary-black);
+    color:var(--primary-light)
+}
+
+
+@media only screen and (min-width:993px) {
+    .content{
+        max-width: 531px;
+    }
+    .content h1{
+        font-size: var(--h1-desktop);
+       
+    }
+    .content p{
+        font-size: var(--regular-font-size) !important;
+    }
+    
+
+
+}
+.compony-logos img{
+filter: grayscale(100%);
+}

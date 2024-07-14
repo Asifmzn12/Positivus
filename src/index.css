@@ -1,0 +1,88 @@
+:root {
+  --primary-color:#B9FF66;
+  --primary-black:#191A23;
+  --primary-gray:#F3F3F3;
+  --nav-link-hover:#9398B4;
+  --primary-light:#fff;
+  --btn-radius:14px;
+  --title-radius:7px;
+  --btn-padding:15px 20px; 
+  --regular-font-size:20px;
+   overflow-x: hidden !important;
+   --h1-desktop:60px;
+   --h2-desktop:40px;
+   --h3-desktop:30px;
+   --h4-desktop:20px;
+   --fw-desktop:medium;
+
+   --h1-mobile:43px;
+   --h2-mobile:36px;
+   --h3-mobile:26px;
+   --h4-mobile:18px;
+   --fw-desktop:medium;
+   --regular-font-mobile-size:16px;
+
+  
+
+   
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-size: 1rem;
+    min-height: 100%;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease-in-out;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100vw;
+    padding-top: 90px;
+    position: relative;
+}
+
+.theme-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: fixed;
+    right: 0;
+    bottom: 40px;
+    z-index: 9999;
+  }
+  
+  .theme-toggler:hover {
+    background-color: #e2e6ea;
+    color: #000;
+  }
+  
+  .theme-toggler svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  .scroll-to-top{
+    right: 30 !important;
+  }
+  
+ 

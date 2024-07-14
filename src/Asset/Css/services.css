@@ -1,0 +1,250 @@
+.service-content h2 {
+    font-size: var(--h2-desktop);
+    background-color: var(--primary-color);
+    color: var(--primary-black);
+    padding-inline: 7px 10px;
+    border-radius: var(--title-radius);
+}
+
+.card-box {
+    border: 1px inset var(--primary-black);
+    box-shadow: 0px 5px 0px 0px var(--primary-black);
+    border-radius: 50px;
+}
+
+.card-box h3:nth-child(1) {
+    border-radius: var(--title-radius);
+    padding: 10px 15px;
+    font-size: var(--h3-desktop) !important;
+
+}
+
+.card-box h3:nth-child(2) {
+    padding-block: 10px;
+    font-size: var(--h3-desktop);
+
+}
+
+
+.box1 {
+    background-color: var(--primary-gray);
+}
+
+.box1 h3 {
+    background-color: var(--primary-color);
+    color: var(--primary-black);
+}
+
+.box2 {
+    background-color: var(--primary-color);
+}
+
+.box2 h3 {
+    background-color: var(--primary-light);
+}
+
+.box3 {
+    background-color: var(--primary-black);
+
+
+}
+.box3 h3{
+    background-color: var(--primary-light);
+}
+
+.box4 {
+    background-color: var(--primary-gray);
+
+
+}
+.box4 h3{
+    background-color: var(--primary-color);
+}
+
+.box5 {
+    background-color: var(--primary-color);
+
+
+}
+.box5 h3{
+    background-color: var(--primary-light);
+}
+
+.box6 {
+    background-color: var(--primary-black);
+
+
+}
+.box6 h3{
+    background-color: var(--primary-color);
+}
+
+.card-box h3:nth-child(1) {
+    font-size: var(--h3-desktop) !important;
+    border-radius: var(--title-radius);
+    padding: 10px 15px;
+
+}
+
+.card-box h3:nth-child(2) {
+    font-size: var(--h3-desktop) !important;
+    border-radius: var(--title-radius);
+    padding-block: 10px;
+    text-align: center;
+    max-width: 221px;
+
+}
+
+.arricon img {
+    border-radius: 50px;
+    border: 1px solid var(--primary-black);
+    padding: 10px;
+    background-color: var(--primary-black);
+}
+
+.box3 .arricon img, .box6 .arricon img {
+    content: url("/images/blackarrow.svg") !important;
+}
+
+.arricon p {
+    font-size: var(--regular-font-size);
+    color: var(--primary-black);
+}
+.box3 .arricon img,.box6 .arricon img{
+    background-color: var(--primary-light);
+
+}
+.box3 .arricon p,.box6 .arricon p{
+    color: var(--primary-light);
+}
+
+@media only screen and (max-width:991px) {
+    .card-box h3:nth-child(1) {
+        font-size: var(--h3-mobile) !important;
+
+
+
+    }
+
+    .card-box h3:nth-child(2) {
+        font-size: var(--h3-mobile) !important;
+        max-width: 180px;
+
+    }
+
+}
+
+.bg-about{
+    background-color: var(--primary-gray);
+    border-radius: 45px;
+}
+
+.starImg img{
+    transform: scale(1.1);
+}
+.case-studies{
+    background-color: var(--primary-black);
+    color: var(--primary-light);
+    border-radius: 45px;
+}
+.case-studies .case-content{
+    border-right: 1px solid var(--primary-light) ;
+    
+}
+.card-3{
+    border: none !important;
+}
+.case-studies a p{
+    color: var(--primary-light);
+}
+.case-content .arricon img{
+    padding: 0;
+    border: none;
+}
+
+/* .accordion-item,.accordion-button{
+    background-color: var(--primary-color) !important;
+
+} */
+.accordion-button:focus{
+    box-shadow: none !important;
+   
+}
+/* .accordion-header{
+    background-color: var(--primary-color);
+    border-radius: 45px;
+}
+.accordion-item{
+    box-shadow: 0px 5px 0px 0px var(--primary-black);
+    border-radius: 45px;
+    background-color: var(--primary-color);
+
+} */
+
+.accordion-item{
+    border: none !important;
+}
+.accordion-button{
+    border-radius: 45px !important;
+    padding: 30px 60px !important;
+    background-color: var(--primary-color) !important;
+
+}
+.accordion-item .collapsed{
+    background-color: var(--primary-gray) !important;
+}
+
+
+.teams-card{
+    border: 1px inset var(--primary-black);
+    box-shadow: 0px 5px 0px 0px var(--primary-black);
+    border-radius: 45px;
+    padding: 30px 40px;
+}
+
+
+.accordion-button::after {
+    background-image: url("/images/Plus icon.svg");
+    height: 50px;
+    width: 50px;
+    background-size: cover !important;
+
+    
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url("/images/Plus icon (1).png");
+    height: 50px;
+    width: 50px;
+    background-size: cover !important;
+}
+
+@media only screen and (max-width:768px){
+    .card-box{
+        border-radius: 40px;
+    }
+   
+ 
+}
+
+@media only screen and (max-width:991px){
+
+    .case-studies{
+        background-color: unset;
+    }
+    
+    
+    .case-studies .case-content{
+        background-color: var(--primary-black);
+        border-radius: 40px;
+    }
+   
+    
+}
+@media only screen and (max-width:1399px) {
+    .teams-card{
+       
+        padding: 30px 15px;
+    }
+}
+

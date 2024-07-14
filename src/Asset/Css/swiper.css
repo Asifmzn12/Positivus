@@ -1,0 +1,6 @@
+.hero-right-image img {
+    width: 100% !important;
+    height: 60vh !important;
+    object-fit: cover;
+   
+}

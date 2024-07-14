@@ -1,0 +1,52 @@
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw; 
+    background-color: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; 
+  }
+  .loader-text {
+    margin: 10px 0px 0px 20px; 
+    font-size: 2rem;
+    color: #ffffff; 
+    font-weight: 700;
+    font-family: inherit;
+
+
+  }
+
+  .social-icons a{
+    text-decoration: none;
+  }
+  .social-icons i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+   
+   
+}
+.fa-facebook-f, .fa-envelope,.fa-linkedin-in {
+    color: #fff !important;
+    border: 2px solid #fff;
+    transition: all 0.2s ease-in-out;
+}
+.fa-facebook-f:hover {
+    background-color: #25d366;
+}
+.fa-linkedin-in:hover {
+    background-color: #0077b5;
+}
+.fa-envelope:hover{
+    background-color: #d44638;
+}
+

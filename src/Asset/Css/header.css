@@ -1,0 +1,102 @@
+.nav-link{
+    position: relative;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-link:not(:last-child):hover {
+    text-decoration: none;
+    color: var(--nav-link-hover) !important;
+    transition: all 0.2s ease;
+
+}
+
+.nav-link:active {
+    font-weight: 700 !important;
+}
+
+
+
+
+.navbar {
+    padding: 20px 0;
+    position: relative;
+    transition: all .5s ease !important;
+
+}
+.navbar-brand img {
+    content: url('/images/logo.svg');
+}
+
+.reqbtn{
+    border: 1px solid #000;
+    border-radius: var(--btn-radius);
+    padding: var(--btn-padding) !important
+}
+
+
+
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-link {
+    font-size: 20px !important;
+    color: var(--primary-black);
+}
+
+
+.navbar-toggler {
+    border: 0px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("/images/light-menu.svg") !important;
+    transition: background-image 0.3s ease-in;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    background-image: url("/images/light-close.svg") !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+    color: none !important;
+    border: none !important;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    background-blend-mode: multiply;
+
+}
+
+.navbar-toggler {
+    transition: all 0.2 ease;
+}
+.nav-bg a{
+    font-size: 18px;
+}
+
+@media only screen and (max-width:576px) {
+    .img {
+        width: 220px;
+        height: auto;
+        background-blend-mode: multiply;
+
+    }
+}
