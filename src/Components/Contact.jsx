@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import "./Asset/Css/contact.css"
+import "../Asset/Css/contact.css"
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -97,8 +97,8 @@ function Contact() {
     }, []);
 
     return (
-        <div className="container">
-            <div className="row py-4 my-3 gy-4 aling-items-center justify-content-center justify-content-lg-start">
+        <div className="container mb-3">
+            <div className="row py-lg-4 py-2 my-3  aling-items-center justify-content-center justify-content-lg-start">
                 <div className="col-lg-6">
                     <div className="gap-3 service-content d-flex flex-column flex-md-row align-items-center">
                         <h2 className="align-self-center align-self-lg-start">Contact</h2>
@@ -107,7 +107,7 @@ function Contact() {
                 </div>
             </div>
             <ToastContainer />
-            <div className="row contact-row px-4 py-5 overflow-x-hidden">
+            <div className="row contact-row px-lg-4 px-1 py-5 overflow-x-hidden">
                 <div className="col-lg-6">
                     <form onSubmit={sendEmail} className="contact-form">
                         <div className="row">

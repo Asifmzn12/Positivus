@@ -1,6 +1,6 @@
 import Services from "./Components/Services"
 import Introduction from "./Introduction"
-import Contact from "./Contact"
+import Contact from "./Components/Contact"
 
 
 

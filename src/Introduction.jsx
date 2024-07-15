@@ -50,7 +50,7 @@ function Introduction() {
                     </div>
                 </div>
                 <div className="container compony-logos">
-                    <div className="row mx-1 mx-lg-0 gy-3 justify-content-center">
+                    <div className="row pb-2 mb-3 mx-1 mx-lg-0 gy-3 justify-content-center">
                         {logo.map((logos,i) => (
                             <div className="col-md-2 col-6 " key={i}>
                                 <img src={logos.img} className="img-fluid" alt="logos" ></img>

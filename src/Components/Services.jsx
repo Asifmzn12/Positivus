@@ -7,7 +7,7 @@ import { teamImg,faq } from '../config/componylogo';
 function Services() {
     return (
         <div className="services">
-            <div className="container mb-3  overflow-hidden">
+            <div className="container overflow-hidden">
                 <div className="row gy-4 py-lg-4 py-2  aling-items-center justify-content-center justify-content-lg-start">
                     <div className="col-lg-7">
 
@@ -68,7 +68,7 @@ function Services() {
                 <div className="row bg-about mx-1 mx-lg-0  justify-content-center">
                     <div className="col-md-6 d-flex align-items-center ">
                         <div className="content d-flex flex-column gap-3 align-items-lg-start py-3">
-                            <div className="p-lg-4">
+                            <div className="p-lg-4 p-3">
                                 <h3 className="mb-0 fw-bold">Let’s make things happen</h3>
                                 <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
                                 <button className="consultbtn">Get your free proposal</button>
@@ -96,7 +96,7 @@ function Services() {
 
                     </div>
 
-                    <div className="row my-4  gy-3 case-studies">
+                    <div className="row my-lg-4 my-2  gy-3 case-studies">
                         <div className="col-md-6 col-lg-4 d-flex">
                             <div className="case-content card-1 px-4 py-5">
                                 <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
@@ -188,7 +188,7 @@ function Services() {
 
             </div>
             <div className='container team mb-3' >
-                <div className="row gy-3 aling-items-center justify-content-center justify-content-lg-start">
+                <div className="row  py-lg-4 py-2 my-3 gy-3 aling-items-center justify-content-center justify-content-lg-start">
                     <div className="col-lg-5">
 
                         <div className="gap-3 service-content d-flex flex-column flex-md-row">
@@ -199,7 +199,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className='row gy-3'>
+                <div className='row gy-4'>
 
                     {teamImg.map((team, i) => (
                         <div className="col-md-6 col-lg-4" key={i}>
@@ -224,7 +224,7 @@ function Services() {
 
                     ))}
 
-                    <div className='text-end mb-3'>
+                    <div className='text-end mt-4'>
                         <button className="consultbtn seemore  ">See all team</button>
 
                     </div>
