@@ -10,6 +10,10 @@
     border: 1px inset var(--primary-black);
     box-shadow: 0px 5px 0px 0px var(--primary-black);
     border-radius: 50px;
+    transition: all 0.3s ease-in;
+}
+.card-box:hover{
+    box-shadow: none;
 }
 
 .card-box h3:nth-child(1) {
@@ -95,12 +99,23 @@
 
 }
 
+.arricon {
+    transition: all 0.3s ease-in;
+}
+
 .arricon img {
     border-radius: 50px;
     border: 1px solid var(--primary-black);
     padding: 10px;
     background-color: var(--primary-black);
+    transition: all 0.3s ease;
 }
+
+.arricon:hover img {
+    transform: rotate(32deg);
+}
+
+
 
 .box3 .arricon img, .box6 .arricon img {
     content: url("/images/blackarrow.svg") !important;
@@ -208,6 +223,10 @@
     box-shadow: 0px 5px 0px 0px var(--primary-black);
     border-radius: 45px;
     padding: 30px 40px;
+    transition: all 0.3s ease-in;
+}
+.teams-card:hover{
+    box-shadow: none;
 }
 
 
@@ -239,9 +258,7 @@
     .card-box{
         border-radius: 40px;
     }
-   .seemore{
-    width: 100%;
-   }
+  
    .accordintext{
     font-size: 16px;
    }
@@ -257,6 +274,9 @@
    }
    .accordion-button{
     padding-inline:15px !important ;
+   }
+   .seemore{
+    width: 100%;
    }
  
 }

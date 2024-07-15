@@ -18,7 +18,7 @@ function App() {
     // Simulate an API call or other asynchronous tasks
     setTimeout(() => {
       setLoading(false); // Set loading to false after tasks are completed
-    }, 100); // Simulated 2 seconds delay, adjust as needed
+    }, 2000); // Simulated 2 seconds delay, adjust as needed
   }, []);
 
   return (
@@ -30,9 +30,9 @@ function App() {
             width="80"
             ariaLabel="color-ring-loading"
             wrapperStyle={{}}
-            wrapperClass="color-ring-wrapper" colors={['#11772f', '#11772f', '#11772f', '#11772f', '#11772f']}
+            wrapperClass="color-ring-wrapper" colors={['#B9FF66', '#B9FF66', '#B9FF66', '#B9FF66', '#B9FF66']}
           />
-          <h4 className="fw-bold">Thank you for visiting my portfolio</h4>
+          <h4 className="fw-bold">Thank you for visiting...</h4>
         </div>
       ) : (
         <div>

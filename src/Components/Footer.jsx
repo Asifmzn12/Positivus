@@ -60,13 +60,13 @@ function Footer() {
                                 <div className='row gy-3 justify-content-center'>
                                     <div className="col-md-6">
                                         <Form.Group className="" controlId="formBasicEmail">
-                                            <Form.Control type="email" placeholder="Enter email" />
+                                            <Form.Control type="email" placeholder="Enter email" className='emailbox' />
 
                                         </Form.Group>
 
                                     </div>
                                     <div className='col-md-6 '>
-                                        <Button className='formbtn' type="submit">
+                                        <Button className='formbtn fw-medium' type="submit">
                                           Subscribe to news
                                         </Button>
 
