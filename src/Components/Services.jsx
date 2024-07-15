@@ -66,7 +66,7 @@ function Services() {
             </div>
             <div className="container mb-3">
                 <div className="row bg-about mx-1 mx-lg-0  justify-content-center">
-                    <div className="col-md-6 d-flex align-items-center ">
+                    <div className="col-md-10 col-lg-6 d-flex align-items-center ">
                         <div className="content d-flex flex-column gap-3 align-items-lg-start py-3">
                             <div className="p-lg-4 p-3">
                                 <h3 className="mb-0 fw-bold">Let’s make things happen</h3>
