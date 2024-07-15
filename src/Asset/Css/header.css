@@ -48,6 +48,13 @@
 .navbar{
     z-index: 999999 !important;
 }
+.reqbtn{
+    transition: all 0.3s ease-in;
+}
+.reqbtn:hover{
+background-color: var(--primary-black);
+color:var(--primary-light)
+}
 
 .navbar-toggler {
     border: 0px;

@@ -102,7 +102,7 @@ function Contact() {
                 <div className="col-lg-6">
                     <div className="gap-3 service-content d-flex flex-column flex-md-row align-items-center">
                         <h2 className="align-self-center align-self-lg-start">Contact</h2>
-                        <p className="mb-0 text-center text-lg-start">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+                        <p className="mb-0 text-center text-lg-start">Connect with Us: Let`&apos`ss Discuss Your Digital Marketing Needs</p>
                     </div>
                 </div>
             </div>

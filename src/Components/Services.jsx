@@ -96,7 +96,7 @@ function Services() {
 
                     </div>
 
-                    <div className="row my-lg-4 my-2  gy-3 case-studies">
+                    <div className="row my-lg-4 my-2  gy-3 case-studies py-3">
                         <div className="col-md-6 col-lg-4 d-flex">
                             <div className="case-content card-1 px-4 py-5">
                                 <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
@@ -169,7 +169,10 @@ function Services() {
                                         </div>
                                     </Accordion.Header>
                                     <Accordion.Body>
-                                        During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
+                                     <p className='accordintext'>
+                                     During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
+                                     
+                                     </p>
                                     </Accordion.Body>
                                 </Accordion.Item>
 

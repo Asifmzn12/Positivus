@@ -4,7 +4,12 @@
     padding: var(--btn-padding);
     font-size: var(--regular-font-size);
     background-color: var(--primary-black);
-    color:var(--primary-light)
+    color:var(--primary-light);
+    transition: all 0.3s ease-in;
+}
+.consultbtn:hover{
+    background-color: var(--primary-light);
+    color: var(--primary-black);
 }
 
 

@@ -228,12 +228,22 @@
     background-size: cover !important;
 }
 
+
+.accordion-body{
+    padding-inline:30px ;
+}
+.accordintext{
+    font-size: var(--regular-font-size);
+}
 @media only screen and (max-width:768px){
     .card-box{
         border-radius: 40px;
     }
    .seemore{
     width: 100%;
+   }
+   .accordintext{
+    font-size: 16px;
    }
  
 }
