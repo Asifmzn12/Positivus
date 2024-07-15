@@ -1,0 +1,31 @@
+.contact-form input,textarea{
+    width: 100%;
+}
+.contact-form {
+
+        background-color: inherit;
+        border-radius: var(--btn-radius);
+      
+}
+
+ .contact-form input,textarea{
+
+    padding: var(--btn-padding) !important;
+    border-radius: var(--btn-radius) !important;
+  }
+  
+  .contact-row{
+  background-color: var(--primary-gray);
+  border-radius: 45px;
+  }
+  .contact-us-img img{
+    margin-left: 317px;
+  }
+
+  @media screen and (min-width:991px) and (max-width:1399px) {
+    .contact-us-img img{
+        margin-left: 240px;
+      }
+     
+    
+    }

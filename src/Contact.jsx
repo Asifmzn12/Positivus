@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { contactapi } from "./config/contactcustomapi";
+import "./Asset/Css/contact.css"
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -13,6 +13,7 @@ function Contact() {
     });
 
     const [formErrors, setFormErrors] = useState({});
+    const [rows, setRows] = useState(2); // Default rows
 
     const validateForm = () => {
         let errors = {};
@@ -64,13 +65,13 @@ function Contact() {
 
         if (isValid) {
             emailjs.sendForm("service_req", "template_01xbp3a", e.target, "m0vWn-8VGOdFYFC_k")
-            .then((result) => {
-                console.log(result);
-                toast.success("Thank you for Your Message"); 
-            }, (error) => {
-                console.log(error);
-                toast.error("Failed to send message. Please try again later.");
-            });
+                .then((result) => {
+                    console.log(result);
+                    toast.success("Thank you for Your Message");
+                }, (error) => {
+                    console.log(error);
+                    toast.error("Failed to send message. Please try again later.");
+                });
 
             setFormData({
                 user_name: "",
@@ -81,29 +82,37 @@ function Contact() {
         }
     };
 
-    return (
-        <div className="container py-5">
-            <ToastContainer />
-            <h2 className="text-center mb-md-5 mb-4">Contact</h2>
+    const adjustTextareaRows = () => {
+        if (window.innerWidth >= 991 && window.innerWidth <= 1399) {
+            setRows(4);
+        } else {
+            setRows(8);
+        }
+    };
 
-            <div className="row justify-content-md-around justify-content-center gap-md-2 gap-lg-0 gap-4">
-                <div className="col-md-5 d-flex flex-column gap-3 gap-lg-5">
-                    {contactapi.map((contactinfo, index) => (
-                        <div key={index} className="d-flex contact-info align-items-center">
-                            <div>
-                                <i>{<contactinfo.icon />}</i>
-                            </div>
-                            <div>
-                                <h5>{contactinfo.heading}</h5>
-                                <h6>{contactinfo.text}</h6>
-                            </div>
-                        </div>
-                    ))}
+    useEffect(() => {
+        adjustTextareaRows();
+        window.addEventListener('resize', adjustTextareaRows);
+        return () => window.removeEventListener('resize', adjustTextareaRows);
+    }, []);
+
+    return (
+        <div className="container">
+            <div className="row py-4 my-3 gy-4 aling-items-center justify-content-center justify-content-lg-start">
+                <div className="col-lg-6">
+                    <div className="gap-3 service-content d-flex flex-column flex-md-row align-items-center">
+                        <h2 className="align-self-center align-self-lg-start">Contact</h2>
+                        <p className="mb-0 text-center text-lg-start">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+                    </div>
                 </div>
-                <div className="col-md-7">
+            </div>
+            <ToastContainer />
+            <div className="row contact-row px-4 py-5 overflow-x-hidden">
+                <div className="col-lg-6">
                     <form onSubmit={sendEmail} className="contact-form">
-                        <div className="row email-me">
-                            <div className="col-md-6">
+                        <div className="row">
+                            <div className="col-12 mb-3">
+                                <label className="mb-2">Name</label>
                                 <input
                                     type="text"
                                     name="user_name"
@@ -114,7 +123,8 @@ function Contact() {
                                 />
                                 {formErrors.user_name && <p className="error-message ms-2 text-danger">{formErrors.user_name}</p>}
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-12 mb-3">
+                                <label className="mb-2">Email <sup className="fw-bold">*</sup></label>
                                 <input
                                     type="email"
                                     name="user_email"
@@ -125,23 +135,13 @@ function Contact() {
                                 />
                                 {formErrors.user_email && <p className="error-message ms-2 text-danger">{formErrors.user_email}</p>}
                             </div>
-                            <div className="col-md-12">
-                                <input
-                                    type="text"
-                                    name="subject"
-                                    id="subject"
-                                    placeholder="Enter Subject"
-                                    value={formData.subject}
-                                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                                />
-                                {formErrors.subject && <p className="error-message ms-2 text-danger">{formErrors.subject}</p>}
-                            </div>
-                            <div className="col-md-12 mb-2">
+                            <div className="col-12 mb-3">
+                                <label className="mb-2">Message <sup className="fw-bold">*</sup></label>
                                 <textarea
                                     name="message"
                                     id="message"
                                     cols="60"
-                                    rows="8"
+                                    rows={rows}
                                     placeholder="Your Message"
                                     value={formData.message}
                                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -149,12 +149,15 @@ function Contact() {
                                 {formErrors.message && <p className="ms-2 error-message text-danger">{formErrors.message}</p>}
                             </div>
                             <div className="col-md-12">
-                                <button className="site-btn-outline" type="submit">
+                                <button className="consultbtn w-100" type="submit">
                                     Send Message
                                 </button>
                             </div>
                         </div>
                     </form>
+                </div>
+                <div className="col-md-6 d-none d-lg-block text-end contact-us-img">
+                    <img src="images/contact-illustration.png" className="img-fluid" alt="Contact Us" />
                 </div>
             </div>
         </div>

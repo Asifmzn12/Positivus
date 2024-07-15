@@ -140,7 +140,7 @@ export const teamImg = [
   },
 
   {
-   id: 6,
+    id: 6,
     img: '/images/team6.png',
     name: "Sarah Kim",
     designation: "Content Creator",
@@ -150,3 +150,31 @@ export const teamImg = [
 
   },
 ]
+export const faq = [
+  {
+    id: 1,
+    title: "Consultation",
+  },
+  {
+    id: 2,
+    title: "Research and Strategy Development",
+  },
+  {
+    id: 3,
+    title: "Implementation",
+  },
+  {
+    id: 4,
+    title: "Monitoring and Optimization",
+  },
+  {
+    id: 5,
+    title: "Reporting and Communication",
+  },
+
+  {
+    id: 6,
+    title: "Continual Improvement",
+  },
+]
+

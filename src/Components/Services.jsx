@@ -2,16 +2,16 @@ import Accordion from 'react-bootstrap/Accordion';
 
 import "../Asset/Css/services.css"
 import { servicelogo } from "../config/componylogo"
-import { teamImg } from '../config/componylogo';
+import { teamImg,faq } from '../config/componylogo';
 
 function Services() {
     return (
         <div className="services">
-            <div className="container  overflow-hidden">
-                <div className="row py-4 my-3 gy-4 aling-items-center justify-content-center justify-content-lg-start">
+            <div className="container mb-3  overflow-hidden">
+                <div className="row gy-4 py-lg-4 py-2  aling-items-center justify-content-center justify-content-lg-start">
                     <div className="col-lg-7">
 
-                        <div className="gap-3 service-content d-flex flex-column flex-md-row">
+                        <div className="gap-3 my-4 service-content d-flex flex-column flex-md-row">
                             <h2 className="align-self-center align-self-lg-start">Services</h2>
                             <p className="mb-0 text-center text-lg-start">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
                         </div>
@@ -22,8 +22,8 @@ function Services() {
             </div>
 
 
-            <div className="container">
-                <div className="row my-3 gy-3 justify-content-between justify-content-center ">
+            <div className="container mb-3">
+                <div className="row py-3 gy-3 justify-content-between justify-content-center ">
 
                     {servicelogo.map((services, i) => (
                         <div className="col-md-6 d-flex flex-column " key={i} >
@@ -64,11 +64,11 @@ function Services() {
                 </div>
 
             </div>
-            <div className="container py-5 overflow-hidden mt-4">
+            <div className="container mb-3">
                 <div className="row bg-about mx-1 mx-lg-0  justify-content-center">
                     <div className="col-md-6 d-flex align-items-center ">
                         <div className="content d-flex flex-column gap-3 align-items-lg-start py-3">
-                            <div className="">
+                            <div className="p-lg-4">
                                 <h3 className="mb-0 fw-bold">Let’s make things happen</h3>
                                 <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
                                 <button className="consultbtn">Get your free proposal</button>
@@ -85,8 +85,8 @@ function Services() {
 
             </div>
 
-            <div className="container  ">
-                <div className="row py-4 my-3 gy-4 aling-items-center justify-content-center justify-content-lg-start">
+            <div className="container  mb-3">
+                <div className="row py-lg-4 py-2  gy-3 aling-items-center justify-content-center justify-content-lg-start">
                     <div className="col-lg-8">
 
                         <div className="gap-3 service-content d-flex flex-column flex-md-row">
@@ -96,7 +96,7 @@ function Services() {
 
                     </div>
 
-                    <div className="row my-4 py-5 gy-3 case-studies">
+                    <div className="row my-4  gy-3 case-studies">
                         <div className="col-md-6 col-lg-4 d-flex">
                             <div className="case-content card-1 px-4 py-5">
                                 <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
@@ -145,8 +145,8 @@ function Services() {
                 </div>
 
             </div>
-            <div className="container  ">
-                <div className="row py-4 my-3 gy-4 aling-items-center justify-content-center justify-content-lg-start">
+            <div className="container mb-3  ">
+                <div className="row gy-3 aling-items-center justify-content-center justify-content-lg-start">
                     <div className="col-lg-8">
 
                         <div className="gap-3 service-content d-flex flex-column flex-md-row align-items-center">
@@ -155,34 +155,40 @@ function Services() {
                         </div>
 
                     </div>
+                    
+                    <div className="row  gy-3 ">
+                    <Accordion defaultActiveKey="0" className="custom-accordion ">
+                        {
+                            faq.map((items, i) => (
 
-                    <div className="row my-4 py-5 gy-3 ">
-                        <div className=''>
-
-                            <Accordion defaultActiveKey="0" className='d-flex flex-column gap-4'>
-                                <Accordion.Item eventKey="0">
+                                <Accordion.Item eventKey={i} key={i} className='mb-4'>
                                     <Accordion.Header>
-                                        <div className='d-flex gap-2 align-items-center mx-2'>
-                                            <h1>01</h1>
-                                            <p className='mb-0'>Consultation</p>
+                                        <div className='d-flex gap-3 align-items-center mx-2'>
+                                            <h1 className="accordion-number mb-0">0{i+1}</h1>
+                                            <h4 className='accordion-title mb-0'>{items.title}</h4>
                                         </div>
-
                                     </Accordion.Header>
                                     <Accordion.Body>
                                         During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
                                     </Accordion.Body>
                                 </Accordion.Item>
 
+                    
+                            ))
+
+                        }
+
                             </Accordion>
 
-                        </div>
+
+                       
 
                     </div>
                 </div>
 
             </div>
-            <div className='container team' >
-                <div className="row py-4 my-3 gy-4 aling-items-center justify-content-center justify-content-lg-start">
+            <div className='container team mb-3' >
+                <div className="row gy-3 aling-items-center justify-content-center justify-content-lg-start">
                     <div className="col-lg-5">
 
                         <div className="gap-3 service-content d-flex flex-column flex-md-row">
@@ -193,14 +199,14 @@ function Services() {
                     </div>
                 </div>
 
-                <div className='row gy-4'>
+                <div className='row gy-3'>
 
                     {teamImg.map((team, i) => (
                         <div className="col-md-6 col-lg-4" key={i}>
                             <div className='teams-card'>
                                 <div className='team-card-content d-flex justify-content-between'>
                                     <img src={team.img} className='img-fluid' alt="" />
-                                    <div className='align-self-end'>
+                                    <div className='align-self-end text-center'>
                                         <h4 className='mb-0'>{team.name}</h4>
                                         <p className='mb-0'>{team.designation}</p>
                                     </div>
@@ -218,10 +224,10 @@ function Services() {
 
                     ))}
 
-                 <div className='text-end'>
-                 <button className="consultbtn w-25 ">See all team</button>
+                    <div className='text-end mb-3'>
+                        <button className="consultbtn seemore  ">See all team</button>
 
-                 </div>
+                    </div>
 
 
                 </div>

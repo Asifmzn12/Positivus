@@ -182,12 +182,20 @@
 } */
 
 .accordion-item{
-    border: none !important;
+    border: 1px solid var(--primary-black) !important;
+    box-shadow: 0px 5px 0px 0px var(--primary-black);
+    border-radius: 45px !important;
+    background-color: var(--primary-color);
+
+
+
+
 }
 .accordion-button{
     border-radius: 45px !important;
-    padding: 30px 60px !important;
+    padding: 30px 30px !important;
     background-color: var(--primary-color) !important;
+
 
 }
 .accordion-item .collapsed{
@@ -201,6 +209,7 @@
     border-radius: 45px;
     padding: 30px 40px;
 }
+
 
 
 .accordion-button::after {
@@ -223,7 +232,22 @@
     .card-box{
         border-radius: 40px;
     }
-   
+   .seemore{
+    width: 100%;
+   }
+ 
+}
+
+@media only screen and (max-width:576px){
+   .seemore{
+    width: 100%;
+   }
+   .accordion-title{
+    font-size: 16px;
+   }
+   .accordion-button{
+    padding-inline:15px !important ;
+   }
  
 }
 

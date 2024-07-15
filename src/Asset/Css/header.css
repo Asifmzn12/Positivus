@@ -45,7 +45,9 @@
     font-size: 20px !important;
     color: var(--primary-black);
 }
-
+.navbar{
+    z-index: 999999 !important;
+}
 
 .navbar-toggler {
     border: 0px;

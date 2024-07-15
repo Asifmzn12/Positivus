@@ -1,5 +1,6 @@
 import Services from "./Components/Services"
 import Introduction from "./Introduction"
+import Contact from "./Contact"
 
 
 
@@ -10,6 +11,8 @@ function Index() {
       <>
       <Introduction/>
       <Services/>
+      <Contact/>
+      
      
 
       
