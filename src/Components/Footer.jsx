@@ -84,8 +84,10 @@ function Footer() {
 
                      <div className='bordr-bottom mt-3'></div>
                      <div className=' p-lg-4 p-2 footer-bottom d-flex flex-column flex-md-row gap-3 mt-3 '>
-                      <p>© 2023 Positivus. All Rights Reserved.</p>
+                      <p>© 2024 Positivus. All Rights Reserved. </p>
                        <a href='' className='text-light'>Privacy Policy</a>
+
+                       <p>Made by Asif Ali</p>
                      
                      </div>
 

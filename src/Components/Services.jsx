@@ -64,7 +64,7 @@ function Services() {
                 </div>
 
             </div>
-            <div className="container mb-3">
+            <div className="container my-lg-5 my-2">
                 <div className="row bg-about mx-1 mx-lg-0  justify-content-center">
                     <div className="col-md-10 col-lg-6 d-flex align-items-center ">
                         <div className="content d-flex flex-column gap-3 align-items-lg-start py-3">
