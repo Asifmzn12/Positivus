@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { inject } from '@vercel/analytics';
+// import { inject } from '@vercel/analytics';
 
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import { ColorRing } from 'react-loader-spinner'
@@ -8,7 +8,7 @@ import Index from './Index';
 import Footer from './Components/Footer';
 
 function App() {
-  inject();
+  // inject();
 
   const [loading, setLoading] = useState(true);
 
